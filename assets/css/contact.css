@@ -1,0 +1,23 @@
+.img{
+    width: 830px;
+    height: 500px;
+    background: radial-gradient(520px , #9639c88c , transparent 50%);
+}
+
+.loremip{
+    width: 8em;
+    height: 8em;
+    margin-top: -90%;
+    margin-left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.social-icons{
+    animation: rotation 60s linear infinite ;
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
