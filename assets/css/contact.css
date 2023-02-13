@@ -1,0 +1,50 @@
+.img{
+    width: 830px;
+    height: 500px;
+    background: radial-gradient(520px , #9639c88c , transparent 50%);
+}
+
+.loremip{
+    width: 100px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+
+
+
+  #container {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 30px;
+    grid-template-rows: 30px;
+    place-content: center;
+    border-radius: 50%;
+  }
+  .item {
+    position: absolute;
+    left: 51%;
+    margin-left: -40px;
+    top: 55%;
+    margin-top: -40px;
+    grid-area:1/1;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    animation: spin 10s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+    transform:rotate(0) translate(120px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform:rotate(1turn) translate(120px) rotate(-1turn);
+    }
+  }
+
